@@ -1,0 +1,13 @@
+.container {
+	max-width: calc($maxWidthContainer + $containerPadding * 2);
+	margin: 0 auto;
+	padding: 0 $containerPadding;
+
+	@include bp($tabletS) {
+		padding: 0 calc($containerPadding - 8px);
+	}
+
+	@include bp($mobileS) {
+		padding: 0 calc($containerPadding - 16px);
+	}
+}

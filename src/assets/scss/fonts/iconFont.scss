@@ -1,0 +1,35 @@
+[class^="icons__icon-"],
+[class*=" icons__icon-"] {
+	font-family: "iconFont" !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icons__icon-arrow-down:before {
+	content: "\e900";
+}
+.icons__icon-chat:before {
+	content: "\e901";
+}
+.icons__icon-logo:before {
+	content: "\e902";
+}
+.icons__icon-phone:before {
+	content: "\e903";
+}
+.icons__icon-profile:before {
+	content: "\e904";
+}
+.icons__icon-repair:before {
+	content: "\e905";
+}
+.icons__icon-search:before {
+	content: "\e906";
+}

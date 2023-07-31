@@ -1,0 +1,42 @@
+@font-face {
+	font-family: "TTLakes";
+	font-display: swap;
+	src: url("../fonts/TTLakes-Bold.woff2") format("woff2"),
+		url("../fonts/TTLakes-Bold.ttf") format("truetype"),
+		url("../fonts/TTLakes-Bold.otf") format("otf"),
+		url("../fonts/TTLakes-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TTLakes";
+	font-display: swap;
+	src: url("../fonts/TTLakes-Medium.woff2") format("woff2"),
+		url("../fonts/TTLakes-Medium.ttf") format("truetype"),
+		url("../fonts/TTLakes-Medium.otf") format("otf"),
+		url("../fonts/TTLakes-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TTLakes";
+	font-display: swap;
+	src: url("../fonts/TTLakes-Regular.woff2") format("woff2"),
+		url("../fonts/TTLakes-Regular.ttf") format("truetype"),
+		url("../fonts/TTLakes-Regular.otf") format("otf"),
+		url("../fonts/TTLakes-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "iconFont";
+	font-display: swap;
+	src: url("../fonts/iconFont.woff2") format("woff2"),
+		url("../fonts/iconFont.ttf") format("truetype"),
+		url("../fonts/iconFont.otf") format("otf"),
+		url("../fonts/iconFont.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;}
