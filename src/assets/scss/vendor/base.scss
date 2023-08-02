@@ -56,3 +56,11 @@ p {
 		margin-bottom: 2rem;
 	}
 }
+
+.main {
+	margin-left: 320px;
+
+	@include bp($notepad) {
+		margin-left: 0;
+	}
+}

@@ -3,9 +3,11 @@
 	border-bottom: 1px solid #d9fff5;
 
 	display: none;
+	visibility: hidden;
 
-	@include bp($tablet) {
+	@include bp($notepad) {
 		display: block;
+		visibility: visible;
 	}
 	// .header__inner
 	&__inner {

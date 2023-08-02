@@ -19,7 +19,7 @@ $maxWidthContainer: 1056px;
 $containerPadding: 32px;
 
 // Ширина срабатывания первого брейк-поинта
-$containerWidth: $maxWidthContainer + $containerPadding;
+$containerWidth: $maxWidthContainer + $containerPadding * 2;
 
 // Брейк-поинты
 $notepadL: 1440px; // ПК, ноутбуки, некоторые планшеты в горизонтальном положении

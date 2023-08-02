@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="assets/css/style.min.css?_v=20230801191451">
+	<link rel="stylesheet" href="assets/css/style.min.css">
 	<!-- Swiper -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230801191451"/> -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> -->
 	
 	<!-- Useful meta tags -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 	
-	<title>Home</title>
+	<title>CPS</title>
 </head>
 <body>
 	<div class="page" id="page">
@@ -25,7 +25,7 @@
 		
 				<div class="header__inner">
 					<div class="header__left">
-						<button class="header__burger btn" type="button">
+						<button class="header__burger btn" type="button" id="burger">
 							<span></span>
 							<span></span>
 							<span></span>
@@ -54,6 +54,50 @@
 			</div>
 		</header>
 		
+		<aside class="sidebar" id="sidebar">
+			<div class="sidebar__menu sidebar-menu">
+				<header class="sidebar-menu__header sidebar-header">
+					<button class="sidebar-header__close btn icons__icon-sidebar-close" type="button" id="sidebar-close"></button>
+					<div class="sidebar-header__logo">
+						<a href="#" tabindex="1"><img src="assets/images/icons/logo.svg" alt=""></a>
+					</div>
+					<button class="sidebar-header__btn btn icons__icon-sidebar-search" type="button"></button>
+				</header>
+				<nav class="sidebar-menu__nav sidebar-nav">
+					<ul class="sidebar-nav__list">
+						<li><a class="sidebar-nav__link" href="#">Ремонт техники</a></li>
+						<li><a class="sidebar-nav__link active" href="#">Услуги и сервисы</a></li>
+						<li><a class="sidebar-nav__link" href="#">Корпоративным клиентам</a></li>
+						<li><a class="sidebar-nav__link" href="#">Продавцам техники</a></li>
+						<li><a class="sidebar-nav__link" href="#">Партнерам</a></li>
+						<li><a class="sidebar-nav__link" href="#">Производителям</a></li>
+						<li><a class="sidebar-nav__link" href="#">Наши сервисные центры</a></li>
+						<li><a class="sidebar-nav__link" href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<footer class="sidebar-menu__footer sidebar-footer">
+					<div class="sidebar-footer__content">
+						<div class="sidebar-footer__buttons">
+							<button class="sidebar-footer__btn btn icons__icon-phone"></button>
+							<button class="sidebar-footer__btn btn icons__icon-chat"></button>
+							<button class="sidebar-footer__btn btn icons__icon-profile"></button>
+						</div>
+						<div class="sidebar-footer__email">
+							<a href="mailto:mail@cps.com">mail@cps.com</a>
+						</div>
+						<div class="sidebar-footer__phone">
+							<a href="tel:88008908900">8 800 890 8900</a>
+						</div>
+					</div>
+					<div class="sidebar-footer__lang footer-lang">
+						<a class="footer-lang__link active" href="#">RU</a>
+						<a class="footer-lang__link" href="#">EN</a>
+						<a class="footer-lang__link" href="#">CH</a>
+					</div>
+				</footer>
+			</div>
+			<div class="sidebar__bg" id="sidebar-background"></div>
+		</aside>		
 		
 		<main class="main">
 			<section class="services-intro services-intro--padding--42">
@@ -69,8 +113,8 @@
 										<button class="intro-button__btn btn icons__icon-repair" type="button" tabindex="-1"></button>
 									</label>
 									<label class="intro-header__button intro-button" tabindex="0">
-										<span class="intro-button__text">Оставить заявку</span>
-										<button class="intro-button__btn btn icons__icon-repair" type="button" tabindex="-1"></button>
+										<span class="intro-button__text">Статус ремонта</span>
+										<button class="intro-button__btn btn icons__icon-search" type="button" tabindex="-1"></button>
 									</label>
 								</div>
 							</div>
@@ -107,12 +151,12 @@
 							</div>
 							<div class="intro-info__right">
 								<div class="intro-info__image">
-									<picture><source srcset="assets/images/image-1.webp" type="image/webp"><img src="assets/images/image-1.jpg" alt=""></picture>
+									<img src="assets/images/image-1.jpg" alt="">
 								</div>
 							</div>
 						</article>
 					</div>
-		
+					<div style="height: 10000px;"></div>
 				</div>
 			</section>
 		</main>
@@ -124,12 +168,10 @@
 		</footer>		
 	</div>
 
-	<!-- JS -->
-	<!-- JQuery -->
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js?_v=20230801191451"></script> -->
-
 	<!-- Swiper -->
-	<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230801191451"></script> -->
-	<script src="assets/js/app.min.js?_v=20230801191451"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+
+	<!-- JS -->
+	<script src="assets/js/app.min.js"></script>
 </body>
 </html>
