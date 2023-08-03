@@ -498,26 +498,34 @@ body.lock {
   color: #7E7E82;
 }
 
-.footer-lang {
+.footer-lang__list {
   display: flex;
   align-items: center;
   column-gap: 0.7rem;
 }
-.footer-lang__link {
+.footer-lang__radio {
+  cursor: pointer;
+}
+.footer-lang__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+.footer-lang__input:checked + .footer-lang__text {
+  color: gray;
+}
+.footer-lang__input:focus + .footer-lang__text {
+  text-decoration: underline;
+}
+.footer-lang__text {
   color: #1B1C21;
   font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 500;
   line-height: 1.5; /* 150% */
   letter-spacing: -0.2px;
-  transition: all 0.2s linear;
-}
-.footer-lang__link.active, .footer-lang__link:active, .footer-lang__link:hover {
-  color: #7E7E82;
-}
-.footer-lang__link:focus {
-  color: #7E7E82;
-  text-decoration: underline;
 }
 
 .container {
