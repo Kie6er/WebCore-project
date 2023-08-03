@@ -215,30 +215,41 @@
 		}
 	}
 }
+
 .footer-lang {
-	display: flex;
-	align-items: center;
-	column-gap: 0.7rem;
-	// .footer-lang__btn
-	&__link {
+	// .footer-lang__list
+	&__list {
+		display: flex;
+		align-items: center;
+		column-gap: .7rem;
+	}
+	// .footer-lang__radio
+	&__radio {
+		cursor: pointer;
+	}
+	// .footer-lang__input
+	&__input {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+
+		&:checked + .footer-lang__text {
+			color: gray;
+		}
+
+		&:focus + .footer-lang__text {
+			text-decoration: underline;
+		}
+	}
+	// .footer-lang__text
+	&__text {
 		color: $black;
 		font-size: 1.6rem;
 		text-transform: uppercase;
 		font-weight: 500;
 		line-height: 1.5; /* 150% */
 		letter-spacing: -0.2px;
-
-		transition: all 0.2s linear;
-
-		&.active,
-		&:active,
-		&:hover {
-			color: $gray;
-		}
-
-		&:focus {
-			color: $gray;
-			text-decoration: underline;
-		}
 	}
 }
