@@ -165,9 +165,11 @@
 		letter-spacing: 0.2px;
 
 		margin: 1.4rem 0;
+		height: 17rem;
+
+		transition: all .5s ease;
 
 		@include bp($tablet) {
-			height: 17rem;
 			margin: 0;
 			margin-bottom: 1.4rem;
 		}
@@ -195,37 +197,13 @@
 				}
 			}
 		}
-	}
-	// .intro-info__button
-	&__button {
-		display: flex;
-		align-items: center;
-		background: none;
 
-		> span {
-			color: $black;
-			font-size: 1.6rem;
-			font-weight: 500;
-			line-height: 1.5;
-			letter-spacing: -0.2px;
+		&.show {
+			height: auto;
 
-			padding-left: 1.4rem;
-		}
-
-		&:hover > span,
-		&:focus > span,
-		&:active > span {
-			text-decoration: underline;
-		}
-	}
-	// .intro-info__arrows
-	&__arrows {
-		display: flex;
-		flex-direction: column;
-
-		span {
-			font-size: 0.6rem;
-			color: $cian;
+			@include bp($mobile) {
+				height: auto;
+			}
 		}
 	}
 	// .intro-info__right
@@ -234,9 +212,6 @@
 
 		@include bp($mobile) {
 			width: 100%;
-		}
-
-		@include bp($mobileS) {
 		}
 	}
 	// .intro-info__image
@@ -265,7 +240,6 @@
 	}
 
 	@include bp($tablet) {
-		align-items: center;
 		column-gap: 4.5rem;
 	}
 
@@ -276,5 +250,42 @@
 	@include bp($mobile) {
 		flex-direction: column;
 		column-gap: 0;
+	}
+}
+
+.show-button {
+	display: inline-flex;
+	align-items: center;
+	background: none;
+
+	> span {
+		color: $black;
+		font-size: 1.6rem;
+		font-weight: 500;
+		line-height: 1.5;
+		letter-spacing: -0.2px;
+
+		padding-left: 1.4rem;
+	}
+
+	&:hover > span,
+	&:focus > span,
+	&:active > span {
+		text-decoration: underline;
+	}
+
+	&__arrows {
+		display: flex;
+		flex-direction: column;
+
+		span {
+			font-size: 0.6rem;
+			color: $cian;
+		}
+	}
+
+	&.show &__arrows span::before {
+		display: block;
+		transform: rotate(180deg);
 	}
 }

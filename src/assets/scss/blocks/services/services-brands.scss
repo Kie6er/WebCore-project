@@ -1,0 +1,126 @@
+.services-brands {
+	// .services-brands__header
+	&__header {
+		margin-bottom: 2.4rem;
+
+		@include bp($mobile) {
+			margin-bottom: 1.6rem;
+		}
+	}
+}
+
+.header-title {
+	padding: 1.6rem 0;
+	background: linear-gradient(90deg, #f8f8f8 0%, #fff 100%);
+	border-top: 1px solid #d9fff5;
+	// .header-title__text
+	&__text {
+		color: $gray;
+		font-size: 1.6rem;
+		line-height: 1.5; /* 150% */
+		letter-spacing: -0.2px;
+		text-transform: uppercase;
+	}
+}
+
+.brands-wrapper {
+	// .brands-wrapper__inner
+	&__inner {
+		height: 16rem;
+		overflow: hidden;
+		margin-bottom: 2.4rem;
+		transition: all 0.5s ease;
+
+		&.show {
+			height: auto;
+		}
+
+		&.swiper {
+			height: auto;
+			margin-bottom: 0;
+		}
+	}
+	// .brands-wrapper__slider
+	&__slider {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		column-gap: 3.2rem;
+		row-gap: 1.6rem;
+
+		@include bp($tablet) {
+			column-gap: 2.4rem;
+		}
+
+		@include bp($mobile) {
+			column-gap: 1.6rem;
+		}
+
+		&.swiper-wrapper {
+			gap: 0;
+		}
+	}
+	// .brands-wrapper__item
+	&__item {
+		height: 7.2rem;
+		padding: 1.2rem;
+	}
+	&__pagination {
+		display: none;
+
+		@include bp($mobile) {
+			display: block;
+		}
+	}
+	// .brands-wrapper__pagination
+	&__pagination.swiper-pagination {
+		position: static;
+		margin-top: 1.6rem;
+
+		span {
+			background: #dddddd;
+			width: 1.2rem;
+			height: 1.2rem;
+
+			&.swiper-pagination-bullet-active {
+				background: #b5b6bc;
+			}
+		}
+	}
+	&__button {
+		@include bp($mobile) {
+			display: none;
+		}
+	}
+}
+
+.brands-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 0.5rem;
+
+	border-radius: 6px;
+	border: 1px solid #eaeaea;
+	background: $white;
+	// .brands-item__logo
+	&__logo {
+		height: 100%;
+		max-width: 12.8rem;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&.swiper-slide {
+		display: flex !important;
+		height: 7.2rem !important;
+		padding: 1.6rem !important;
+
+		@include bp($mobileS) {
+			max-width: 24rem !important;
+		}
+	}
+}

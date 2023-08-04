@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="assets/css/style.min.css">
 	<!-- Swiper -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 	
 	<!-- Useful meta tags -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +13,7 @@
 	<meta name="google" content="notranslate">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="keywords" content="">
-	<meta name="description" content="">
-	
-	<title>CPS</title>
+	<meta name="description" content="">	<title>CPS</title>
 </head>
 <body>
 	<div class="page" id="page">
@@ -90,9 +88,26 @@
 						</div>
 					</div>
 					<div class="sidebar-footer__lang footer-lang">
-						<a class="footer-lang__link active" href="#">RU</a>
-						<a class="footer-lang__link" href="#">EN</a>
-						<a class="footer-lang__link" href="#">CH</a>
+						<ul class="footer-lang__list">
+							<li class="footer-lang__item">
+								<label class="footer-lang__radio">
+									<input class="footer-lang__input" type="radio" checked name="lang-radio">
+									<span class="footer-lang__text">RU</span>
+								</label>
+							</li>
+							<li class="footer-lang__item">
+								<label class="footer-lang__radio">
+									<input class="footer-lang__input" type="radio" name="lang-radio">
+									<span class="footer-lang__text">EN</span>
+								</label>
+							</li>
+							<li class="footer-lang__item">
+								<label class="footer-lang__radio">
+									<input class="footer-lang__input" type="radio" name="lang-radio">
+									<span class="footer-lang__text">CH</span>
+								</label>
+							</li>
+						</ul>
 					</div>
 				</footer>
 			</div>
@@ -110,11 +125,13 @@
 								<div class="intro-header__right">
 									<label class="intro-header__button intro-button" tabindex="0">
 										<span class="intro-button__text">Оставить заявку</span>
-										<button class="intro-button__btn btn icons__icon-repair" type="button" tabindex="-1"></button>
+										<button class="intro-button__btn btn icons__icon-repair" type="button"
+											tabindex="-1"></button>
 									</label>
 									<label class="intro-header__button intro-button" tabindex="0">
 										<span class="intro-button__text">Статус ремонта</span>
-										<button class="intro-button__btn btn icons__icon-search" type="button" tabindex="-1"></button>
+										<button class="intro-button__btn btn icons__icon-search" type="button"
+											tabindex="-1"></button>
 									</label>
 								</div>
 							</div>
@@ -134,19 +151,24 @@
 		
 						<article class="services-intro__info intro-info">
 							<div class="intro-info__left">
-								<div class="intro-info__text">
+								<div class="intro-info__text text-show">
+									<p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы
+										можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+									<p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что
+										подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам
+										обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
 									<p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы
 										можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
 									<p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что
 										подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам
 										обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
 								</div>
-								<button class="intro-info__button">
-									<div class="intro-info__arrows">
+								<button class="intro-info__button show-button" data-show=".text-show">
+									<div class="show-button__arrows">
 										<span class="icons__icon-arrow-down"></span>
 										<span class="icons__icon-arrow-down"></span>
 									</div>
-									<span>Читать далее</span>
+									<span data-showText="Читать далее">Читать далее</span>
 								</button>
 							</div>
 							<div class="intro-info__right">
@@ -156,8 +178,145 @@
 							</div>
 						</article>
 					</div>
-					<div style="height: 10000px;"></div>
+		
 				</div>
+			</section>
+			<section class="services-brands services-brands--mt--50">
+				<article class="services-brands__header header-title">
+					<div class="header-title__container container">
+						<h2 class="header-title__text">Ремонт техники различных брендов</h2>
+					</div>
+				</article>
+		
+				<article class="services-brands__wrapper brands-wrapper">
+					<div class="brands-wrapper__container container">
+		
+						<div class="brands-wrapper__content">
+							<div class="brands-wrapper__inner brands-show" data-swiper="swiper" data-mobile="false"> <!-- swiper -->
+								<div class="brands-wrapper__slider" data-swiper="swiper-wrapper"> <!-- swiper-wrapper -->
+									<div class="brands-wrapper__item brands-item" data-swiper="swiper-slide"> <!-- swiper-slide -->
+										<div class="brands-item__logo">
+											<img src="assets/images/brands/lenovo.png" alt="">
+										</div>
+										<div class="brands-item__button">
+											<button
+												class="brands-item__btn btn btn--border--pink icons__icon-arrow-down"></button>
+										</div>
+									</div>
+									<div class="brands-wrapper__item brands-item " data-swiper="swiper-slide"> <!-- swiper-slide -->
+										<div class="brands-item__logo">
+											<img src="assets/images/brands/samsung.png" alt="">
+										</div>
+										<div class="brands-item__button">
+											<button
+												class="brands-item__btn btn btn--border--pink icons__icon-arrow-down"></button>
+										</div>
+									</div>
+									<div class="brands-wrapper__item brands-item " data-swiper="swiper-slide"> <!-- swiper-slide -->
+										<div class="brands-item__logo">
+											<img src="assets/images/brands/apple.png" alt="">
+										</div>
+										<div class="brands-item__button">
+											<button
+												class="brands-item__btn btn btn--border--pink icons__icon-arrow-down"></button>
+										</div>
+									</div>
+									<div class="brands-wrapper__item brands-item " data-swiper="swiper-slide"> <!-- swiper-slide -->
+										<div class="brands-item__logo">
+											<img src="assets/images/brands/viewsonic.png" alt="">
+										</div>
+										<div class="brands-item__button">
+											<button
+												class="brands-item__btn btn btn--border--pink icons__icon-arrow-down"></button>
+										</div>
+									</div>
+									<div class="brands-wrapper__item brands-item " data-swiper="swiper-slide"> <!-- swiper-slide -->
+										<div class="brands-item__logo">
+											<img src="assets/images/brands/bosch.png" alt="">
+										</div>
+										<div class="brands-item__button">
+											<button
+												class="brands-item__btn btn btn--border--pink icons__icon-arrow-down"></button>
+										</div>
+									</div>
+									<div class="brands-wrapper__item brands-item " data-swiper="swiper-slide"> <!-- swiper-slide -->
+										<div class="brands-item__logo">
+											<img src="assets/images/brands/hp.png" alt="">
+										</div>
+										<div class="brands-item__button">
+											<button
+												class="brands-item__btn btn btn--border--pink icons__icon-arrow-down"></button>
+										</div>
+									</div>
+									<div class="brands-wrapper__item brands-item " data-swiper="swiper-slide"> <!-- swiper-slide -->
+										<div class="brands-item__logo">
+											<img src="assets/images/brands/accer.png" alt="">
+										</div>
+										<div class="brands-item__button">
+											<button
+												class="brands-item__btn btn btn--border--pink icons__icon-arrow-down"></button>
+										</div>
+									</div>
+									<div class="brands-wrapper__item brands-item " data-swiper="swiper-slide"> <!-- swiper-slide -->
+										<div class="brands-item__logo">
+											<img src="assets/images/brands/sony.png" alt="">
+										</div>
+										<div class="brands-item__button">
+											<button
+												class="brands-item__btn btn btn--border--pink icons__icon-arrow-down"></button>
+										</div>
+									</div>
+									<div class="brands-wrapper__item brands-item" data-swiper="swiper-slide"> <!-- swiper-slide -->
+										<div class="brands-item__logo">
+											<img src="assets/images/brands/lenovo.png" alt="">
+										</div>
+										<div class="brands-item__button">
+											<button
+												class="brands-item__btn btn btn--border--pink icons__icon-arrow-down"></button>
+										</div>
+									</div>
+									<div class="brands-wrapper__item brands-item" data-swiper="swiper-slide"> <!-- swiper-slide -->
+										<div class="brands-item__logo">
+											<img src="assets/images/brands/samsung.png" alt="">
+										</div>
+										<div class="brands-item__button">
+											<button
+												class="brands-item__btn btn btn--border--pink icons__icon-arrow-down"></button>
+										</div>
+									</div>
+									<div class="brands-wrapper__item brands-item" data-swiper="swiper-slide"> <!-- swiper-slide -->
+										<div class="brands-item__logo">
+											<img src="assets/images/brands/apple.png" alt="">
+										</div>
+										<div class="brands-item__button">
+											<button
+												class="brands-item__btn btn btn--border--pink icons__icon-arrow-down"></button>
+										</div>
+									</div>
+									<div class="brands-wrapper__item brands-item" data-swiper="swiper-slide"> <!-- swiper-slide -->
+										<div class="brands-item__logo">
+											<img src="assets/images/brands/viewsonic.png" alt="">
+										</div>
+										<div class="brands-item__button">
+											<button
+												class="brands-item__btn btn btn--border--pink icons__icon-arrow-down"></button>
+										</div>
+									</div>
+								</div>
+								<div class="brands-wrapper__pagination" data-swiper="swiper-pagination"></div> <!-- swiper-pagination -->
+							</div>
+							<!-- buttonOpen -->
+							<button class="brands-wrapper__button show-button" data-show=".brands-show">
+								<div class="show-button__arrows">
+									<span class="icons__icon-arrow-down"></span>
+									<span class="icons__icon-arrow-down"></span>
+								</div>
+								<span data-showText="Показать все">Показать все</span>
+							</button>
+						</div>
+		
+					</div>
+				</article>
 			</section>
 		</main>
 
@@ -169,7 +328,7 @@
 	</div>
 
 	<!-- Swiper -->
-	<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 	<!-- JS -->
 	<script src="assets/js/app.min.js"></script>
